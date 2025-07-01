@@ -18,11 +18,14 @@ Each solution includes:
 | 2 | Two Sum | Better | O(n) | O(n) | Hash Map |
 | 3 | Two Sum | Optimal | O(n) | O(n) | Hash Map |
 | 4 | Sort 0s, 1s, and 2s | Brute Force | O(n log n) | O(1) | sort() |
-| 5 | Sort 0s, 1s, and 2s | Better | O(n) | O(1) | Hash Map |
+| 5 | Sort 0s, 1s, and 2s | Better | O(n) | O(1) | Counting |
 | 6 | Sort 0s, 1s, and 2s | Optimal | O(n) | O(1) | Dutch National Flag |
 | 7 | Majority Element (>n/2) | Brute Force | O(n²) | O(1) | - |
 | 8 | Majority Element (>n/2) | Better | O(n) | O(n) | Hash Map |
 | 9 | Majority Element (>n/2) | Optimal | O(n) | O(1) | Moore's Voting Algorithm |
+| 10 | Maximum Subarray Sum | Brute Force | O(n³) | O(1) | - |
+| 11 | Maximum Subarray Sum | Better | O(n²) | O(1) | - |
+| 12 | Maximum Subarray Sum | Optimal | O(n) | O(1) | Kadane’s Algorithm |
 
 ---
 
@@ -39,7 +42,6 @@ Each solution includes:
 - Space: O(n)
 
 **Optimal**  
-- Same as Better  
 - Time: O(n)  
 - Space: O(n)
 
@@ -77,6 +79,22 @@ Each solution includes:
 
 ---
 
+### 4. Maximum Subarray Sum
+
+**Brute Force**  
+- Time: O(n³)  
+- Space: O(1)
+
+**Better**  
+- Time: O(n²)  
+- Space: O(1)
+
+**Optimal** (Kadane’s Algorithm)  
+- Time: O(n)  
+- Space: O(1)
+
+---
+
 ## 🛠️ Tech Stack
 
 - Language: **C++**
@@ -96,4 +114,3 @@ Each solution includes:
 ## 📄 License
 
 This project is licensed under the MIT License.
-
