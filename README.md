@@ -26,72 +26,54 @@ Each solution includes:
 | 10 | Maximum Subarray Sum | Brute Force | O(n³) | O(1) | - |
 | 11 | Maximum Subarray Sum | Better | O(n²) | O(1) | - |
 | 12 | Maximum Subarray Sum | Optimal | O(n) | O(1) | Kadane’s Algorithm |
+| 13 | Rearrange Array by Sign | Optimal | O(n) | O(n) | Two-Pointer |
+| 14 | Alternate Positive Negative (Start Positive) | Optimal | O(n) | O(n) | Two-Pointer |
 
 ---
 
 ## ✅ Problems with Explanation
 
 ### 1. Two Sum
-
-**Brute Force**  
-- Time: O(n²)  
-- Space: O(1)
-
-**Better** (using Hash Map)  
-- Time: O(n)  
-- Space: O(n)
-
-**Optimal**  
-- Time: O(n)  
-- Space: O(n)
+(…same as above…)
 
 ---
 
 ### 2. Sort 0s, 1s, and 2s
-
-**Brute Force** (using built-in sort)  
-- Time: O(n log n)  
-- Space: O(1)
-
-**Better** (Counting approach)  
-- Time: O(n)  
-- Space: O(1)
-
-**Optimal** (Dutch National Flag Algorithm)  
-- Time: O(n)  
-- Space: O(1)
+(…same as above…)
 
 ---
 
 ### 3. Majority Element (>n/2 times)
-
-**Brute Force**  
-- Time: O(n²)  
-- Space: O(1)
-
-**Better** (using Hash Map)  
-- Time: O(n)  
-- Space: O(n)
-
-**Optimal** (Moore’s Voting Algorithm)  
-- Time: O(n)  
-- Space: O(1)
+(…same as above…)
 
 ---
 
 ### 4. Maximum Subarray Sum
+(…same as above…)
 
-**Brute Force**  
-- Time: O(n³)  
-- Space: O(1)
+---
 
-**Better**  
-- Time: O(n²)  
-- Space: O(1)
+### 5. Rearrange Array by Sign
 
-**Optimal** (Kadane’s Algorithm)  
+- Rearrange elements so that positives and negatives appear alternately starting with any sign.
+- Remaining elements (if any) are appended at the end.
+
+**Optimal**  
 - Time: O(n)  
-- Space: O(1)
+- Space: O(n)  
+- Algorithm: Two-Pointer
+
+---
+
+### 6. Alternate Positive Negative (Start Positive)
+
+- Rearrange elements to alternate signs but always start with a **positive number**.
+- Extra positive/negative values are appended at the end **without changing order**.
+
+**Optimal**  
+- Time: O(n)  
+- Space: O(n)  
+- Algorithm: Two-Pointer
 
 ---
 
