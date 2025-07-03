@@ -28,6 +28,8 @@ Each solution includes:
 | 12 | Maximum Subarray Sum | Optimal | O(n) | O(1) | Kadane’s Algorithm |
 | 13 | Rearrange Array by Sign | Optimal | O(n) | O(n) | Two-Pointer |
 | 14 | Alternate Positive Negative (Start Positive) | Optimal | O(n) | O(n) | Two-Pointer |
+| 15 | Next Permutation | Better | O(n) | O(1) | STL `next_permutation()` |
+| 16 | Next Permutation | Optimal | O(n) | O(1) | Lexicographical Algorithm |
 
 ---
 
@@ -54,7 +56,6 @@ Each solution includes:
 ---
 
 ### 5. Rearrange Array by Sign
-
 - Rearrange elements so that positives and negatives appear alternately starting with any sign.
 - Remaining elements (if any) are appended at the end.
 
@@ -66,7 +67,6 @@ Each solution includes:
 ---
 
 ### 6. Alternate Positive Negative (Start Positive)
-
 - Rearrange elements to alternate signs but always start with a **positive number**.
 - Extra positive/negative values are appended at the end **without changing order**.
 
@@ -74,6 +74,37 @@ Each solution includes:
 - Time: O(n)  
 - Space: O(n)  
 - Algorithm: Two-Pointer
+
+---
+
+### 7. Next Permutation
+
+Generate the next lexicographically greater permutation of an array. If not possible, return the smallest (i.e., sorted) permutation.
+
+**Example:**
+- Input: `[2, 1, 5]`
+- Output: `[2, 5, 1]`
+
+---
+
+**Better (STL Solution)**  
+Uses built-in `next_permutation()` from `<algorithm>`.
+
+- **Time:** O(n)  
+- **Space:** O(1)  
+- **Algorithm:** STL
+
+---
+
+**Optimal (Custom Logic)**  
+Steps:
+1. Find the **first decreasing element** from the end: `a[i] < a[i+1]`
+2. Find the **just larger element** to the right of `a[i]`
+3. **Swap** both and **reverse** the suffix starting at `i+1`
+
+- **Time:** O(n)  
+- **Space:** O(1)  
+- **Algorithm:** Lexicographical Permutation (Custom)
 
 ---
 
