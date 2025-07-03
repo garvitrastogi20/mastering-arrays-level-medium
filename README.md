@@ -36,22 +36,38 @@ Each solution includes:
 ## ✅ Problems with Explanation
 
 ### 1. Two Sum
-(…same as above…)
+Given an array and a target, return indices of the two numbers such that they add up to the target.
+
+- **Brute Force:** Check every pair.
+- **Better:** Use a Hash Map to store visited elements.
+- **Optimal:** Use Hash Map while iterating to find complement.
 
 ---
 
 ### 2. Sort 0s, 1s, and 2s
-(…same as above…)
+Sort the array containing only 0s, 1s, and 2s.
+
+- **Brute Force:** Use sort function.
+- **Better:** Use counting approach.
+- **Optimal:** Use Dutch National Flag algorithm.
 
 ---
 
-### 3. Majority Element (>n/2 times)
-(…same as above…)
+### 3. Majority Element (> n/2 times)
+Find the element that appears more than n/2 times.
+
+- **Brute Force:** Count every element.
+- **Better:** Use a Hash Map.
+- **Optimal:** Use Moore’s Voting Algorithm.
 
 ---
 
 ### 4. Maximum Subarray Sum
-(…same as above…)
+Find the contiguous subarray with the maximum sum.
+
+- **Brute Force:** Generate all subarrays.
+- **Better:** Precompute subarray sums.
+- **Optimal:** Kadane’s Algorithm.
 
 ---
 
