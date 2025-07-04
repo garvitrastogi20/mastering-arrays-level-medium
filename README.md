@@ -16,7 +16,7 @@ Each solution includes:
 |------|---------|----------|-----------------|------------------|----------------|
 | 1 | Two Sum | Brute Force | O(n²) | O(1) | - |
 | 2 | Two Sum | Better | O(n) | O(n) | Hash Map |
-| 3 | Two Sum | Optimal | O(n) | O(n) | Hash Map |
+| 3 | Two Sum | Optimal | O(n) | O(n) | Hash Map (2-Pass)|
 | 4 | Sort 0s, 1s, and 2s | Brute Force | O(n log n) | O(1) | sort() |
 | 5 | Sort 0s, 1s, and 2s | Better | O(n) | O(1) | Counting |
 | 6 | Sort 0s, 1s, and 2s | Optimal | O(n) | O(1) | Dutch National Flag |
@@ -30,6 +30,8 @@ Each solution includes:
 | 14 | Alternate Positive Negative (Start Positive) | Optimal | O(n) | O(n) | Two-Pointer |
 | 15 | Next Permutation | Better | O(n) | O(1) | STL `next_permutation()` |
 | 16 | Next Permutation | Optimal | O(n) | O(1) | Lexicographical Algorithm |
+| 17 | Leaders in an Array | Brute Force | O(n²) | O(n) | Nested Loop |
+| 18 | Leaders in an Array | Optimal | O(n) | O(n) | Reverse Traversal |
 
 ---
 
@@ -121,6 +123,33 @@ Steps:
 - **Time:** O(n)  
 - **Space:** O(1)  
 - **Algorithm:** Lexicographical Permutation (Custom)
+
+### 8. Leaders in an Array
+
+An element is a **leader** if it is greater than all the elements to its right.
+
+**Example:**
+- Input: `[10, 22, 12, 3, 0, 6]`
+- Output: `[22, 12, 6]`  
+(22 is greater than all elements to its right, same with 12 and 6)
+
+---
+
+**Brute Force**  
+- Traverse each element and check all elements to its right.
+- **Time:** O(n²)  
+- **Space:** O(n)  
+- **Algorithm:** Nested Loop
+
+---
+
+**Optimal**  
+- Traverse from right to left while maintaining a running maximum.
+- Add element to result if it is greater than the current max.
+- **Time:** O(n)  
+- **Space:** O(n)  
+- **Algorithm:** Reverse Traversal
+
 
 ---
 
