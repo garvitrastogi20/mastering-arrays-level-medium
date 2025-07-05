@@ -32,6 +32,10 @@ Each solution includes:
 | 16 | Next Permutation | Optimal | O(n) | O(1) | Lexicographical Algorithm |
 | 17 | Leaders in an Array | Brute Force | O(n²) | O(n) | Nested Loop |
 | 18 | Leaders in an Array | Optimal | O(n) | O(n) | Reverse Traversal |
+| 19 | Longest Consecutive Sequence | Brute Force | O(n²) | O(1) | find() Linear Search |
+| 20 | Longest Consecutive Sequence | Better | O(n log n) | O(1) | Sorting |
+| 21 | Longest Consecutive Sequence | Optimal | O(n) | O(n) | Hash Set |
+
 
 ---
 
@@ -150,6 +154,43 @@ An element is a **leader** if it is greater than all the elements to its right.
 - **Space:** O(n)  
 - **Algorithm:** Reverse Traversal
 
+
+---
+### 9. Longest Consecutive Sequence
+
+Given an unsorted array of integers, find the length of the longest sequence of consecutive elements.
+
+**Example:**  
+Input: `[4,100,102,3,2,1,101,1,1,104]`  
+Output: `4`  
+Explanation: The longest consecutive sequence is `[1,2,3,4]`
+
+---
+
+**Brute Force**  
+- For every element, check if `current + 1` exists in array using `find()`
+- **Time:** O(n²)  
+- **Space:** O(1)  
+- **Algorithm:** Linear Search with `find()`
+
+---
+
+**Better**  
+- Sort the array first  
+- Skip duplicates  
+- Count sequence lengths by comparing adjacent elements  
+- **Time:** O(n log n)  
+- **Space:** O(1)  
+- **Algorithm:** Sorting
+
+---
+
+**Optimal**  
+- Use a Hash Set to store elements  
+- For each element, start a count only if `(element - 1)` is **not** in the set  
+- **Time:** O(n)  
+- **Space:** O(n)  
+- **Algorithm:** Hash Set (Unordered Set)
 
 ---
 
