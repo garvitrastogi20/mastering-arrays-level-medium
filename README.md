@@ -12,30 +12,31 @@ Each solution includes:
 
 ## 📚 Table of Contents
 
+## 📚 Table of Contents
+
 | S.No | Problem | Approach | Time Complexity | Space Complexity | Algorithm Used |
 |------|---------|----------|-----------------|------------------|----------------|
-| 1 | Two Sum | Brute Force | O(n²) | O(1) | - |
-| 2 | Two Sum | Better | O(n) | O(n) | Hash Map |
-| 3 | Two Sum | Optimal | O(n) | O(n) | Hash Map (2-Pass)|
-| 4 | Sort 0s, 1s, and 2s | Brute Force | O(n log n) | O(1) | sort() |
-| 5 | Sort 0s, 1s, and 2s | Better | O(n) | O(1) | Counting |
-| 6 | Sort 0s, 1s, and 2s | Optimal | O(n) | O(1) | Dutch National Flag |
-| 7 | Majority Element (>n/2) | Brute Force | O(n²) | O(1) | - |
-| 8 | Majority Element (>n/2) | Better | O(n) | O(n) | Hash Map |
-| 9 | Majority Element (>n/2) | Optimal | O(n) | O(1) | Moore's Voting Algorithm |
-| 10 | Maximum Subarray Sum | Brute Force | O(n³) | O(1) | - |
-| 11 | Maximum Subarray Sum | Better | O(n²) | O(1) | - |
-| 12 | Maximum Subarray Sum | Optimal | O(n) | O(1) | Kadane’s Algorithm |
-| 13 | Rearrange Array by Sign | Optimal | O(n) | O(n) | Two-Pointer |
-| 14 | Alternate Positive Negative (Start Positive) | Optimal | O(n) | O(n) | Two-Pointer |
-| 15 | Next Permutation | Better | O(n) | O(1) | STL `next_permutation()` |
-| 16 | Next Permutation | Optimal | O(n) | O(1) | Lexicographical Algorithm |
-| 17 | Leaders in an Array | Brute Force | O(n²) | O(n) | Nested Loop |
-| 18 | Leaders in an Array | Optimal | O(n) | O(n) | Reverse Traversal |
-| 19 | Longest Consecutive Sequence | Brute Force | O(n²) | O(1) | find() Linear Search |
-| 20 | Longest Consecutive Sequence | Better | O(n log n) | O(1) | Sorting |
-| 21 | Longest Consecutive Sequence | Optimal | O(n) | O(n) | Hash Set |
-
+| 1 | [Two Sum](codes/2sumbruteforce.cpp) | Brute Force | O(n²) | O(1) | - |
+| 2 | [Two Sum](code2sumbetter.cpp) | Better | O(n) | O(n) | Hash Map |
+| 3 | [Two Sum](2sumoptimal.cpp) | Optimal | O(n) | O(n) | Hash Map (2-Pass)|
+| 4 | [Sort 0s, 1s, and 2s](sortanarray0-1-2bruteforce.cpp) | Brute Force | O(n log n) | O(1) | sort() |
+| 5 | [Sort 0s, 1s, and 2s](sortanarray0-1-2better.cpp) | Better | O(n) | O(1) | Counting |
+| 6 | [Sort 0s, 1s, and 2s](sortanarray0-1-2optimal.cpp) | Optimal | O(n) | O(1) | Dutch National Flag |
+| 7 | [Majority Element (>n/2)](majorityelementbruteforce.cpp) | Brute Force | O(n²) | O(1) | - |
+| 8 | [Majority Element (>n/2)](majorityelementbetter.cpp) | Better | O(n) | O(n) | Hash Map |
+| 9 | [Majority Element (>n/2)](majorityelementoptimal.cpp) | Optimal | O(n) | O(1) | Moore's Voting Algorithm |
+| 10 | [Maximum Subarray Sum](maximumsubarraysumbruteforce.cpp) | Brute Force | O(n³) | O(1) | - |
+| 11 | [Maximum Subarray Sum](maximumsubarraysumbetter.cpp) | Better | O(n²) | O(1) | - |
+| 12 | [Maximum Subarray Sum](maximumsubarraysumoptimal.cpp) | Optimal | O(n) | O(1) | Kadane’s Algorithm |
+| 13 | [Rearrange Array by Sign](rearrangearraybysign.cpp) | Optimal | O(n) | O(n) | Two-Pointer |
+| 14 | [Alternate Positive Negative (Start Positive)](rearrangearraybysignalternate.cpp) | Optimal | O(n) | O(n) | Two-Pointer |
+| 15 | [Next Permutation](nextpermutationbetter.cpp) | Better | O(n) | O(1) | STL `next_permutation()` |
+| 16 | [Next Permutation](nextpermutationoptimal.cpp) | Optimal | O(n) | O(1) | Lexicographical Algorithm |
+| 17 | [Leaders in an Array](leadersinanarraybruteforce.cpp) | Brute Force | O(n²) | O(n) | Nested Loop |
+| 18 | [Leaders in an Array](leadersinanarrayoptimal.cpp) | Optimal | O(n) | O(n) | Reverse Traversal |
+| 19 | [Longest Consecutive Sequence](longestconsecutivesequencebruteforce.cpp) | Brute Force | O(n²) | O(1) | find() |
+| 20 | [Longest Consecutive Sequence](longestconsecutivesequencebetter.cpp) | Better | O(n log n) | O(1) | Sorting |
+| 21 | [Longest Consecutive Sequence](longestconsecutivesequenceoptimal.cpp) | Optimal | O(n) | O(n) | Hash Set |
 
 ---
 
