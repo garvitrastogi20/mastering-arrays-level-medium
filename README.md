@@ -37,6 +37,9 @@ Each solution includes:
 | 19 | [Longest Consecutive Sequence](codes/longestconsecutivesequencebruteforce.cpp) | Brute Force | O(n²) | O(1) | find() |
 | 20 | [Longest Consecutive Sequence](codes/longestconsecutivesequencebetter.cpp) | Better | O(n log n) | O(1) | Sorting |
 | 21 | [Longest Consecutive Sequence](codes/longestconsecutivesequenceoptimal.cpp) | Optimal | O(n) | O(n) | Hash Set |
+| 22 | [Set Matrix Zero](codes/setmatriceszerobruteforce.cpp) | Brute Force | O(n³) | O(1) | Mark & Replace |
+| 22 | [Set Matrix Zero](codes/setmatriceszerobetter.cpp) | Better | O(n × m) | O(n + m) | Row-Col Flags |
+| 22 | [Set Matrix Zero](codes/setmatriceszerooptimal.cpp) | Optimal | O(n × m) | O(1) | Matrix Marking |
 
 
 ---
@@ -195,6 +198,80 @@ Explanation: The longest consecutive sequence is `[1,2,3,4]`
 - **Algorithm:** Hash Set (Unordered Set)
 
 ---
+
+### 10. Set Matrix Zero
+
+Given an `n x m` matrix, if any element is 0, set its **entire row and column** to 0.
+
+**Example:**
+**Input:**
+1 1 1 1
+1 0 0 1
+1 1 0 1
+1 1 1 1
+
+**Output:**
+1 0 0 1
+0 0 0 0
+0 0 0 0
+1 0 0 1
+
+---
+
+**Brute Force**  
+- When you find a `0`, mark the whole row and column with `-1` first.  
+- In a second pass, convert all `-1` to `0`.
+
+- **Time:** O(n³)  
+- **Space:** O(1)  
+- **Algorithm:** Mark & Replace
+
+---
+
+**Better**  
+- Use two arrays `row[]` and `col[]` to store which rows/columns need to be zeroed.
+- After marking, update the matrix accordingly.
+
+- **Time:** O(2 × n × m)  
+- **Space:** O(n + m)  
+- **Algorithm:** Row-Col Flags
+
+[Code →](codes/setmatriceszerobetter.cpp)
+
+---
+
+**Optimal**  
+- Use the first row and column of the matrix to store flags.
+- Use an extra variable `col0` to separately track if the first column needs to be zero.
+
+- **Time:** O(n × m)  
+- **Space:** O(1)  
+- **Algorithm:** Matrix Marking
+
+[Code →](codes/setmatriceszerooptimal.cpp)
+
+---
+
+## 🛠️ Tech Stack
+
+- Language: **C++**
+- Platform: **LeetCode**
+- Editor: **VS Code**
+
+---
+
+## 📌 Notes
+
+- This repo will be regularly updated with more problems.
+- Each `.cpp` file is structured clearly with comments.
+- Brute → Better → Optimal format is followed for learning progression.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
 
 ## 🛠️ Tech Stack
 
