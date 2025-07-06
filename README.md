@@ -205,17 +205,19 @@ Given an `n x m` matrix, if any element is 0, set its **entire row and column** 
 
 **Example:**
 **Input:**
+```
 1 1 1 1
 1 0 0 1
 1 1 0 1
 1 1 1 1
-
+```
 **Output:**
+```
 1 0 0 1
 0 0 0 0
 0 0 0 0
 1 0 0 1
-
+```
 ---
 
 **Brute Force**  
