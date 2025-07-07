@@ -12,8 +12,6 @@ Each solution includes:
 
 ## 📚 Table of Contents
 
-## 📚 Table of Contents
-
 | S.No | Problem | Approach | Time Complexity | Space Complexity | Algorithm Used |
 |------|---------|----------|-----------------|------------------|----------------|
 | 1 | [Two Sum](codes/2sumbruteforce.cpp) | Brute Force | O(n²) | O(1) | - |
@@ -40,6 +38,9 @@ Each solution includes:
 | 22 | [Set Matrix Zero](codes/setmatriceszerobruteforce.cpp) | Brute Force | O(n³) | O(1) | Mark & Replace |
 | 22 | [Set Matrix Zero](codes/setmatriceszerobetter.cpp) | Better | O(n × m) | O(n + m) | Row-Col Flags |
 | 22 | [Set Matrix Zero](codes/setmatriceszerooptimal.cpp) | Optimal | O(n × m) | O(1) | Matrix Marking |
+| 23 | [Rotate Matrix by 90°](codes/rotatematrixby90bruteforce.cpp) | Brute Force | O(n²) | O(n²) | Index Mapping |
+| 24 | [Rotate Matrix by 90°](codes/rotatematrixby90optimal.cpp) | Optimal | O(n²) | O(1) | Transpose + Reverse |
+
 
 
 ---
@@ -238,7 +239,6 @@ Given an `n x m` matrix, if any element is 0, set its **entire row and column** 
 - **Space:** O(n + m)  
 - **Algorithm:** Row-Col Flags
 
-[Code →](codes/setmatriceszerobetter.cpp)
 
 ---
 
@@ -250,7 +250,41 @@ Given an `n x m` matrix, if any element is 0, set its **entire row and column** 
 - **Space:** O(1)  
 - **Algorithm:** Matrix Marking
 
-[Code →](codes/setmatriceszerooptimal.cpp)
+
+
+---
+
+### 11. Rotate Matrix by 90 Degrees (Clockwise)
+
+Rotate an `n x n` matrix 90° clockwise.
+
+**Example:**
+```
+INPUT       OUTPUT
+1 2 3       7 4 1
+4 5 6  ->   8 5 2
+7 8 9       9 6 3
+```
+
+---
+
+**Brute Force**  
+- Create new matrix  
+- Place `a[i][j]` → `ans[j][n-1-i]`  
+- **Time:** O(n²)  
+- **Space:** O(n²)  
+- **Algorithm:** Index Mapping  
+
+
+---
+
+**Optimal**  
+- Step 1: Transpose  
+- Step 2: Reverse every row  
+- **Time:** O(n²)  
+- **Space:** O(1)  
+- **Algorithm:** Transpose + Reverse  
+
 
 ---
 
@@ -275,22 +309,3 @@ Given an `n x m` matrix, if any element is 0, set its **entire row and column** 
 This project is licensed under the MIT License.
 
 
-## 🛠️ Tech Stack
-
-- Language: **C++**
-- Platform: **LeetCode**
-- Editor: **VS Code**
-
----
-
-## 📌 Notes
-
-- This repo will be regularly updated with more problems.
-- Each `.cpp` file is structured clearly with comments.
-- Brute → Better → Optimal format is followed for learning progression.
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License.
