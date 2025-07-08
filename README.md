@@ -40,6 +40,7 @@ Each solution includes:
 | 22 | [Set Matrix Zero](codes/setmatriceszerooptimal.cpp) | Optimal | O(n × m) | O(1) | Matrix Marking |
 | 23 | [Rotate Matrix by 90°](codes/rotatematrixby90bruteforce.cpp) | Brute Force | O(n²) | O(n²) | Index Mapping |
 | 24 | [Rotate Matrix by 90°](codes/rotatematrixby90optimal.cpp) | Optimal | O(n²) | O(1) | Transpose + Reverse |
+| 25 | [Spiral Matrix](codes/spiralofmatrix.cpp) | Optimal | O(n × m) | O(1) | Boundary Traversal |
 
 
 
@@ -285,6 +286,30 @@ INPUT       OUTPUT
 - **Space:** O(1)  
 - **Algorithm:** Transpose + Reverse  
 
+
+---
+### 12. Spiral Matrix
+
+Print elements of the matrix in **spiral order** (clockwise).
+
+**Example:**
+```
+Input:
+1 2 3
+4 5 6
+7 8 9
+
+Output:
+1 2 3 6 9 8 7 4 5
+```
+---
+
+**Optimal**  
+- Traverse using four boundaries: `top`, `bottom`, `left`, `right`  
+- Update boundaries after traversing each edge  
+- **Time:** O(n × m)  
+- **Space:** O(1)  
+- **Algorithm:** Boundary Traversal (Spiral Order)
 
 ---
 
