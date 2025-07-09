@@ -14,6 +14,22 @@ Each solution includes:
 
 | S.No | Problem | Approach | Time Complexity | Space Complexity | Algorithm Used |
 |------|---------|----------|-----------------|------------------|----------------|
+# 🧠 LeetCode Medium-Level Array Problems
+
+This repository contains solutions to medium-level array problems from [LeetCode](https://leetcode.com/), with each problem implemented using **Brute Force**, **Better**, and **Optimal** approaches.
+
+Each solution includes:
+- Code in C++
+- Step-by-step implementations
+- Time and Space complexities
+- Specific algorithms used for optimal solutions
+
+---
+
+## 📚 Table of Contents
+
+| S.No | Problem | Approach | Time Complexity | Space Complexity | Algorithm Used |
+|------|---------|----------|-----------------|------------------|----------------|
 | 1 | [Two Sum](codes/2sumbruteforce.cpp) | Brute Force | O(n²) | O(1) | - |
 | 2 | [Two Sum](codes/2sumbetter.cpp) | Better | O(n) | O(n) | Hash Map |
 | 3 | [Two Sum](codes/2sumoptimal.cpp) | Optimal | O(n) | O(n) | Hash Map (2-Pass) |
@@ -36,15 +52,17 @@ Each solution includes:
 | 20 | [Longest Consecutive Sequence](codes/longestconsecutivesequencebetter.cpp) | Better | O(n log n) | O(1) | Sorting |
 | 21 | [Longest Consecutive Sequence](codes/longestconsecutivesequenceoptimal.cpp) | Optimal | O(n) | O(n) | Hash Set |
 | 22 | [Set Matrix Zero](codes/setmatriceszerobruteforce.cpp) | Brute Force | O(n³) | O(1) | Mark & Replace |
-| 22 | [Set Matrix Zero](codes/setmatriceszerobetter.cpp) | Better | O(n × m) | O(n + m) | Row-Col Flags |
-| 22 | [Set Matrix Zero](codes/setmatriceszerooptimal.cpp) | Optimal | O(n × m) | O(1) | Matrix Marking |
-| 23 | [Rotate Matrix by 90°](codes/rotatematrixby90bruteforce.cpp) | Brute Force | O(n²) | O(n²) | Index Mapping |
-| 24 | [Rotate Matrix by 90°](codes/rotatematrixby90optimal.cpp) | Optimal | O(n²) | O(1) | Transpose + Reverse |
-| 25 | [Spiral Matrix](codes/spiralofmatrix.cpp) | Optimal | O(n × m) | O(1) | Boundary Traversal |
-
-
+| 23 | [Set Matrix Zero](codes/setmatriceszerobetter.cpp) | Better | O(n × m) | O(n + m) | Row-Col Flags |
+| 24 | [Set Matrix Zero](codes/setmatriceszerooptimal.cpp) | Optimal | O(n × m) | O(1) | Matrix Marking |
+| 25 | [Rotate Matrix by 90°](codes/rotatematrixby90bruteforce.cpp) | Brute Force | O(n²) | O(n²) | Index Mapping |
+| 26 | [Rotate Matrix by 90°](codes/rotatematrixby90optimal.cpp) | Optimal | O(n²) | O(1) | Transpose + Reverse |
+| 27 | [Spiral Matrix](codes/spiralofmatrix.cpp) | Optimal | O(n × m) | O(1) | Boundary Traversal |
+| 28 | [Count Subarrays with Given Sum](codes/numberofsubarraywithsumkbruteforce.cpp) | Brute Force | O(n³) | O(1) | Nested Loop |
+| 29 | [Count Subarrays with Given Sum](codes/numberofsubarraywithsumkbetter.cpp) | Better | O(n²) | O(1) | Prefix Sum |
+| 30 | [Count Subarrays with Given Sum](codes/numofsubarraywithsumkoptimal.cpp) | Optimal | O(n) | O(n) | Hash Map |
 
 ---
+
 
 ## ✅ Problems with Explanation
 
@@ -310,6 +328,48 @@ Output:
 - **Time:** O(n × m)  
 - **Space:** O(1)  
 - **Algorithm:** Boundary Traversal (Spiral Order)
+
+---
+
+### 13. Count Subarrays with Given Sum
+
+Given an array of integers and an integer `k`, find the total number of continuous subarrays whose sum equals to `k`.
+
+**Example:**
+```
+Input: arr = [1, 2, 3, -3, 1, 1, 1, 4, 2, -3], k = 3
+Output: 8
+```
+---
+
+**Brute Force**  
+- Generate all subarrays using 3 nested loops.
+- Count the subarrays with sum equal to `k`.
+
+- **Time:** O(n³)  
+- **Space:** O(1)  
+- **Algorithm:** Nested Loop
+
+---
+
+**Better**  
+- Generate subarrays using 2 nested loops.
+- Keep a running sum while expanding the subarray.
+
+- **Time:** O(n²)  
+- **Space:** O(1)  
+- **Algorithm:** Prefix Sum (without extra array)
+
+---
+
+**Optimal**  
+- Use a Hash Map to store the frequency of prefix sums.
+- For every prefix sum, check if `presum - k` exists.
+- This means a subarray with sum `k` ends at current index.
+
+- **Time:** O(n)  
+- **Space:** O(n)  
+- **Algorithm:** Hash Map (Prefix Sum)
 
 ---
 
