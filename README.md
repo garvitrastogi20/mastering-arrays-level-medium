@@ -14,22 +14,6 @@ Each solution includes:
 
 | S.No | Problem | Approach | Time Complexity | Space Complexity | Algorithm Used |
 |------|---------|----------|-----------------|------------------|----------------|
-# 🧠 LeetCode Medium-Level Array Problems
-
-This repository contains solutions to medium-level array problems from [LeetCode](https://leetcode.com/), with each problem implemented using **Brute Force**, **Better**, and **Optimal** approaches.
-
-Each solution includes:
-- Code in C++
-- Step-by-step implementations
-- Time and Space complexities
-- Specific algorithms used for optimal solutions
-
----
-
-## 📚 Table of Contents
-
-| S.No | Problem | Approach | Time Complexity | Space Complexity | Algorithm Used |
-|------|---------|----------|-----------------|------------------|----------------|
 | 1 | [Two Sum](codes/2sumbruteforce.cpp) | Brute Force | O(n²) | O(1) | - |
 | 2 | [Two Sum](codes/2sumbetter.cpp) | Better | O(n) | O(n) | Hash Map |
 | 3 | [Two Sum](codes/2sumoptimal.cpp) | Optimal | O(n) | O(n) | Hash Map (2-Pass) |
